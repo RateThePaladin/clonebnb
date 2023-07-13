@@ -151,6 +151,15 @@
   background-clip: content-box;
 }
 
+.nav {
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--max-width);
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
