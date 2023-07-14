@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useRef } from 'react'
+import { useRouter } from 'next/navigation';
 import getListing from '../../../lib/getListing'
 import Style from './page.module.css'
 import testGetListing from './../../../lib/testGetListing'
@@ -60,8 +61,10 @@ const ListingPage = ({ params: { listingId }}: Params) => {
         setEndDate(event.target.value);
     };
 
+    const router = useRouter();
+
     const handleSubmit = () => {
-        // Handle date range submission here
+        router.push(`/booking-confirmation?startDate=${startDate}&endDate=${endDate}&listingId=${listingContent.id}&totalPrice=${totalPrice}&listingTitle=${listingContent?.title}&location=${listingContent?.location}`);
     };
 
     // filter the listing data based on the listingId
