@@ -126,8 +126,8 @@ const FilterComponent: React.FC = () => {
           
                      
           {filteredData.map((listing: Listing) => (
-            <div className={Style.item}>
-            <div key={listing.id}>
+            <div className={Style.item} key={listing.id}>
+            <div>
             <Link href={`/listings/${listing.id}` }>
               <h4>{listing.title}</h4>
               <div>
