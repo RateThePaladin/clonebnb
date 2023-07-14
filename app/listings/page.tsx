@@ -110,6 +110,8 @@ const FilterComponent: React.FC = () => {
             max={maxPriceInData}
             value={maxPrice}
             onChange={handlePriceChange}
+            className={Style.slider}
+            // color={red}
           />
         </div>
         <div>

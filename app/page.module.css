@@ -4,7 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 90vh;
+  min-height: 85vh;
+  overflow-y: hidden;
+}
+
+.title {
+  width: 80%;
+  text-align: center;
 }
 
 .description {

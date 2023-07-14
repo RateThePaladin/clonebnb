@@ -28,6 +28,12 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.slider::-webkit-slider-runnable-track{
+    height: auto;
+    width: auto;
+    color: red;
+}
+
 @media screen and (max-width: 650px) {
     .img {
         width: 100%;
