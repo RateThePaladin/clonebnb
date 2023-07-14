@@ -20,10 +20,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <nav>
-          <Link href="/" className={Styles.nav}>Home</Link>
-          <Link href="/about" className={Styles.nav}>About</Link>
-          <Link href="/listings" className={Styles.nav}>Listings</Link>
+        <nav className={Styles.nav}>
+          <Link href="/" className={Styles.navItem}>Home</Link>
+          <Link href="/about" className={Styles.navItem}>About</Link>
+          <Link href="/listings" className={Styles.navItem}>Listings</Link>
           {/* <h1>Clonebnb</h1> */}
         </nav>
         {children}

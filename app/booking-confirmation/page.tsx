@@ -29,14 +29,14 @@ const BookingConfirmationPage = () => {
     cvv: '',
   });
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCreditCardDetails({
-      ...creditCardDetails,
-      [event.target.name]: event.target.value,
+        ...creditCardDetails,
+        [event.target.name]: event.target.value,
     });
-  };
+};
 
-  const handleSubmit = (event) => {
+const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     // Basic Credit Card validation

@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .description {
@@ -152,12 +152,20 @@
 }
 
 .nav {
-  display: inline;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  /* justify-content: center; */
+  /* align-items: center; */
   width: var(--max-width);
   max-width: 100%;
   padding: 0 1rem;
+}
+
+.navItem {
+  display: flex;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Enable hover only on non-touch devices */

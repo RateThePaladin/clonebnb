@@ -64,7 +64,7 @@ const ListingPage = ({ params: { listingId }}: Params) => {
     const router = useRouter();
 
     const handleSubmit = () => {
-        router.push(`/booking-confirmation?startDate=${startDate}&endDate=${endDate}&listingId=${listingContent.id}&totalPrice=${totalPrice}&listingTitle=${listingContent?.title}&location=${listingContent?.location}`);
+        router.push(`/booking-confirmation?startDate=${startDate}&endDate=${endDate}&listingId=${listingContent?.id}&totalPrice=${totalPrice}&listingTitle=${listingContent?.title}&location=${listingContent?.location}`);
     };
 
     // filter the listing data based on the listingId
